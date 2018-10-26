@@ -11,7 +11,8 @@ if r == 1
 end
 
 %Compute addition
-q1 = transpose([q2(4) -q2(1) -q2(2) -q2(3);q2(1) q2(4) q2(3) -q2(2);q2(2) -q2(3) q2(4) q2(1);q2(3) q2(2) -q2(1) q2(4)])*beta;
+q1 = transpose([q2(4) -q2(1) -q2(2) -q2(3);q2(1) q2(4) q2(3) -q2(2);q2(2)...
+    -q2(3) q2(4) q2(1);q2(3) q2(2) -q2(1) q2(4)])*beta;
 
 %Make small rotation
 if q1(4) < 0

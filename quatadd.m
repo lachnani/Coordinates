@@ -10,7 +10,8 @@ if r == 1
 end
 
 %Compute addition
-beta = [q2(4) -q2(1) -q2(2) -q2(3);q2(1) q2(4) q2(3) -q2(2);q2(2) -q2(3) q2(4) q2(1);q2(3) q2(2) -q2(1) q2(4)]*q1;
+beta = [q2(4) -q2(1) -q2(2) -q2(3);q2(1) q2(4) q2(3) -q2(2);q2(2)...
+    -q2(3) q2(4) q2(1);q2(3) q2(2) -q2(1) q2(4)]*q1;
 
 %Make small rotation
 if beta(4) < 0
